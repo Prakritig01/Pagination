@@ -1,9 +1,4 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
     background-color: #1e1e1e;
     color: #ffffff;
@@ -32,6 +27,7 @@ body {
 .pagination {
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 button {
@@ -40,7 +36,6 @@ button {
     border: none;
     padding: 8px 12px;
     cursor: pointer;
-    margin: 0 5px;
     border-radius: 4px;
 }
 
@@ -49,7 +44,13 @@ button:disabled {
     cursor: not-allowed;
 }
 
-#pageInfo {
-    margin: 0 10px;
-    font-size: 14px;
+button.active {
+    background-color: #666;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.ellipsis {
+    color: #888;
+    padding: 0 5px;
 }
